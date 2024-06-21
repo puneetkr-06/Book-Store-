@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background-color: rgb(41, 54, 70);
+            margin: 0px;
+            height: 100vh;
+            width: 100vw;
+        }
+        table {
+            border-spacing:100px 0px;
+            font-style: italic;
+            font-weight: 700;
+        }
+        #searchtext {
+            border: none;
+            margin-left: 20px;
+            padding: 8px;
+            padding-left: 20px;
+            border-radius: 20px;
+            width: 220px;
+        }
+        #up {
+            background-color: rgb(134, 135, 139);
+            margin: 0% 0%;
+            padding: 7px 0px;
+            color: white;
+            border-radius: 5px;
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            color: blue;
+        }
+        h1 {
+            background-image: url(./images/bggrad2.webp);
+            text-align: center;
+            font-weight: bold;
+            font-size: 60px;
+            color: rgb(235, 233, 109);
+            stroke: crimson;
+            stroke-width: 10px;
+            stroke-opacity: 80%;
+        }
+        .profile {
+            padding: 20px;
+            margin-top: 20px;
+            margin-right: 20px;
+            width: 13%;
+            float: right;
+            background-color:  #aeb3b3;
+            
+        }
+        .loginpage {
+            margin-top: 20px;
+        }
+        .heading {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: darkblue;
+        }
+       #cart {
+          color: blue;
+          align-items: center;
+          margin-left: 40%;
+        
+        }
+        .carttext {
+            color: black;
+            font-family: fantasy;
+            margin: 0% 25%;
+            padding-bottom: 5px;
+
+        }
+        .profileimg {
+            border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;
+            margin-left: 25%;
+        }
+        .protext {
+            padding: 0px 0px;
+            margin-left: 30%;
+        }
+        #name {
+            margin-bottom: 10px;
+        }
+        .nametext {
+            margin-left:35%;
+        }
+        .book {
+            background-image: url(./images/bggrad3.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            border: 1px solid black;
+            border-radius: 20px;
+            width: 380px;
+            margin: 20px 20px;
+            display: inline-block;
+        }
+        .book:hover {
+            transform: scale(1.2);
+        }
+        .button {
+            margin-left: 35%;
+            margin-bottom: 5%;
+            background-color: coral;
+            border-radius: 10px;
+        }
+        .bookimg {
+            width: 300px;
+            height: 200px;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-bottom: 5%;
+        }
+        .latest {
+            position: fixed;
+            right: 5px;
+            bottom: 10px;
+            color: black;
+            font-weight: bold;
+            border-radius: 10%;
+            height: 30px;
+            padding: 10px 10px;
+            background-color: red;
+            animation-name: blink;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes blink {
+            from {background-color: red;}
+            to {background-color: yellow;}
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="up">
+        <table>
+            <tr>
+                <td><a href="">Home</a></td>
+                <td><a href="About.htm" target="_blank">About Us</a></td>
+                <td>Order Now</td>
+                <td>Coupons</td>
+                <td>Publications</td>
+                <td>Contact Us</td>
+                <td>
+                    <input type="text" name="search" id="searchtext" placeholder="Search Books" ></td>
+                </tr>
+            </table>
+        </div>
+ <h1> PUNEET BOOK STORE</h1>
+ 
+    <div class="profile">
+    <img src="./images/download.png" class="profileimg" height= "100" alt="Error 404">
+    <h4 class="protext">Your profile</h4>
+    <i class="fa fa-cart-plus" id="cart" aria-hidden="true"></i>
+    <p class="carttext">ADD TO CART</p>
+    <hr>
+     <div class="heading">
+        <p><u>USER LOGIN</u></p>
+    <form class="loginpage">
+        <div class="userlogin">
+            <label for ="name">Username</label>
+            <input type="text" name ="Myname" id="name"> 
+            </div>
+
+        <div class="password">
+            <label for="password">Password</label>
+            <input type="text" name ="Myname" id="name"> 
+        </div>
+    </div>
+    </div>
+
+   <div class="CONTAINER">
+
+    <div id="hcverma" class="book">
+       <h3 class="nametext">HC VERMA</h3>
+        <img src="./images/HCV.jfif" class="bookimg" alt="Error 404">
+        <button class="button"><a href="payment.htm">BUY NOW</a></button>
+    </div>
+  
+    <div id="cengage" class="book">
+      <h3 class="nametext">CENGAGE</h3>
+        <img src="./images/cengage.webp" class="bookimg" alt="Error 404">
+        <button class ="button"><a href="payment.htm">BUY NOW</a></button>
+     </div>
+
+       <div id="mschauhan" class="book">
+        <h3 class="nametext">MS CHOUHAN</h3>
+        <img src="./images/msc.jpg" class="bookimg" alt="Error 404">
+        <button class ="button"><a href="payment.htm">BUY NOW</a></button>
+     </div>
+
+  
+    <div id="rdsharma" class="book">
+        <h3 class="nametext">RD SHARMA</h3>
+        <img src="./images/rds.jfif" class="bookimg" alt="Error 404">
+        <button class ="button"><a href="payment.htm">NOW</a></button>
+    </div>
+    <div id="ncert" class="book">
+        <h3 class="nametext">NCERT</h3>
+        <img src="./images/ncert.jpeg" class="bookimg" alt="Error 404">
+        <button class="button"><a href="payment.htm">BUY NOW</a></button>
+    </div>
+    <div id="exampler" class="book">
+        <h3 class="nametext">NCERT EXAMPLER</h3>
+        <img src="./images/ncertex.jfif" class="bookimg" alt="Error 404">
+        <button class="button"><a href="payment.htm">BUY NOW</a></button>
+    </div>
+
+   </div> 
+   <div class="latest">LATEST BOOKS</div>
+</body>
+</html>
